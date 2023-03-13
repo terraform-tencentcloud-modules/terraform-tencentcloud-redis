@@ -22,6 +22,12 @@ variable "product_type" {
   default     = 1
 }
 
+variable "template_id" {
+  description = "Specify which existed template import from."
+  type        = string
+  default     = ""
+}
+
 variable "params_override" {
   description = "A list of parameter maps to apply"
   type        = list(map(string))

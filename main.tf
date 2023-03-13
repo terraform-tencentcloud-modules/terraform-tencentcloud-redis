@@ -46,6 +46,7 @@ module "redis_param_template" {
   name   = var.redis_param_template_name
   description = var.params_template_description
   product_type = var.redis_template_product_type
+  template_id = var.redis_template_template_id
   params_override = var.params_override
 }
 

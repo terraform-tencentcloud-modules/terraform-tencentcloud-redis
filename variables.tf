@@ -138,7 +138,7 @@ variable "redis_param_template_name" {
   default     = ""
 }
 
-variable "template_id" {
+variable "redis_template_template_id" {
   description = "Parameter template id description"
   type        = string
   default     = ""

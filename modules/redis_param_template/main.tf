@@ -3,7 +3,8 @@ resource "tencentcloud_redis_param_template" "this" {
 
   name         = var.name
   description  = var.description
-  product_type = var.product_type
+  product_type = var.template_id != "" ? null : var.product_type
+  template_id  = var.template_id == "" ? null : var.template_id
   dynamic "params_override" {
     for_each = var.params_override
     content {

@@ -81,7 +81,8 @@ module "redis" {
 | redis_id | ID of a redis instance to which the policy will be applied. | string | "" | yes
 | create_redis_param_template | Whether to create redis backup config. | bool | true | no
 | redis_param_template_name | Parameter template name. | string | "" | yes
-| redis_template_product_type | Specify product type. Valid values: 1 (Redis 2.8 Memory Edition in cluster architecture), 2 (Redis 2.8 Memory Edition in standard architecture), 3 (CKV 3.2 Memory Edition in standard architecture), 4 (CKV 3.2 Memory Edition in cluster architecture), 5 (Redis 2.8 Memory Edition in standalone architecture), 6 (Redis 4.0 Memory Edition in standard architecture), 7 (Redis 4.0 Memory Edition in cluster architecture), 8 (Redis 5.0 Memory Edition in standard architecture), 9 (Redis 5.0 Memory Edition in cluster architecture). | number | 6 | yes
+| redis_template_product_type | Specify product type. Valid values: 1 (Redis 2.8 Memory Edition in cluster architecture), 2 (Redis 2.8 Memory Edition in standard architecture), 3 (CKV 3.2 Memory Edition in standard architecture), 4 (CKV 3.2 Memory Edition in cluster architecture), 5 (Redis 2.8 Memory Edition in standalone architecture), 6 (Redis 4.0 Memory Edition in standard architecture), 7 (Redis 4.0 Memory Edition in cluster architecture), 8 (Redis 5.0 Memory Edition in standard architecture), 9 (Redis 5.0 Memory Edition in cluster architecture). | number | 6 | no
+| redis_template_template_id | Specify which existed template import from. | string | "" | no
 | params_override | A list of parameter maps to apply | list(map(string)) | [] | no
 | params_template_description | Parameter template description. | string | "" | no
 
